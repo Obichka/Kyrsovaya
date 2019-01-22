@@ -10,10 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="Uchet" runat="server" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="InfoId"
+            <asp:GridView ID="Uchet" runat="server" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="infoId"
                 ShowHeaderWhenEmpty="true"
 
-                OnRowCommand="Uchet_RowCommand"
+                OnRowCommand="Uchet_RowCommand" OnRowEditing="Uchet_RowEditing" OnRowCancelingEdit="Uchet_RowCancelingEdit" 
+                OnRowUpdating="Uchet_RowUpdating" OnRowDeleting="Uchet_RowDeleting"
                 
                 BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal">
                 
