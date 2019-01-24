@@ -4,17 +4,10 @@ F:\Youtube Channel\Dotnet Mob\asp.net tutorial\gridview crud\project\CrudInGridV
 F:\Youtube Channel\Dotnet Mob\asp.net tutorial\gridview crud\project\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.csprojResolveAssemblyReference.cache
 F:\Youtube Channel\Dotnet Mob\asp.net tutorial\gridview crud\project\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.dll
 F:\Youtube Channel\Dotnet Mob\asp.net tutorial\gridview crud\project\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.pdb
-C:\Users\ALLO\Desktop\CrudInGridView\CrudInGridView\bin\CrudInGridView.dll.config
-C:\Users\ALLO\Desktop\CrudInGridView\CrudInGridView\bin\CrudInGridView.dll
-C:\Users\ALLO\Desktop\CrudInGridView\CrudInGridView\bin\CrudInGridView.pdb
-C:\Users\ALLO\Desktop\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.csprojAssemblyReference.cache
-C:\Users\ALLO\Desktop\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.csproj.CoreCompileInputs.cache
-C:\Users\ALLO\Desktop\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.dll
-C:\Users\ALLO\Desktop\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.pdb
-C:\Users\ALLO\Desktop\CrudInGridView1\CrudInGridView\bin\CrudInGridView.dll.config
-C:\Users\ALLO\Desktop\CrudInGridView1\CrudInGridView\bin\CrudInGridView.dll
-C:\Users\ALLO\Desktop\CrudInGridView1\CrudInGridView\bin\CrudInGridView.pdb
-C:\Users\ALLO\Desktop\CrudInGridView1\CrudInGridView\obj\Debug\CrudInGridView.csprojAssemblyReference.cache
-C:\Users\ALLO\Desktop\CrudInGridView1\CrudInGridView\obj\Debug\CrudInGridView.csproj.CoreCompileInputs.cache
-C:\Users\ALLO\Desktop\CrudInGridView1\CrudInGridView\obj\Debug\CrudInGridView.dll
-C:\Users\ALLO\Desktop\CrudInGridView1\CrudInGridView\obj\Debug\CrudInGridView.pdb
+C:\d\CrudInGridView\CrudInGridView\bin\CrudInGridView.dll.config
+C:\d\CrudInGridView\CrudInGridView\bin\CrudInGridView.dll
+C:\d\CrudInGridView\CrudInGridView\bin\CrudInGridView.pdb
+C:\d\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.csprojAssemblyReference.cache
+C:\d\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.csproj.CoreCompileInputs.cache
+C:\d\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.dll
+C:\d\CrudInGridView\CrudInGridView\obj\Debug\CrudInGridView.pdb

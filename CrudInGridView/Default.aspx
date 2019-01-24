@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
 
-            <asp:GridView ID="gvUchet" runat="server" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="InfoID"
+            <asp:GridView ID="gvUchet" runat="server" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="MainID"
                 ShowHeaderWhenEmpty="true"
 
                 OnRowCommand="gvUchet_RowCommand" OnRowEditing="gvUchet_RowEditing" OnRowCancelingEdit="gvUchet_RowCancelingEdit"
@@ -29,7 +29,7 @@
                 <SortedDescendingHeaderStyle BackColor="#00547E" />
                 
                 <Columns>
-                    <asp:TemplateField HeaderText="Sotrudnik">
+                    <asp:TemplateField HeaderText="Сотрудник">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("Sotrudnik") %>' runat="server" />
                         </ItemTemplate>
@@ -40,7 +40,7 @@
                             <asp:TextBox ID="txtSotrudnikFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="DataPost">
+                    <asp:TemplateField HeaderText="Дата поставки">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("DataPost") %>' runat="server" />
                         </ItemTemplate>
@@ -51,7 +51,7 @@
                             <asp:TextBox ID="txtDataPostFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="NazvaniePredmeta">
+                    <asp:TemplateField HeaderText="Название предмета">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("NazvaniePredmeta") %>' runat="server" />
                         </ItemTemplate>
@@ -62,7 +62,7 @@
                             <asp:TextBox ID="txtNazvaniePredmetaFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Kolichestvo">
+                    <asp:TemplateField HeaderText="Количество">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("Kolichestvo") %>' runat="server" />
                         </ItemTemplate>
@@ -73,7 +73,7 @@
                             <asp:TextBox ID="txtKolichestvoFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                       <asp:TemplateField HeaderText="DataVida">
+                       <asp:TemplateField HeaderText="Дата выдачи">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("DataVida") %>' runat="server" />
                         </ItemTemplate>
@@ -81,10 +81,10 @@
                             <asp:TextBox ID="txtDataVida" Text='<%# Eval("DataVida") %>' runat="server" />
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:TextBox ID="txtKDataVidaFooter" runat="server" />
+                            <asp:TextBox ID="txtDataVidaFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                       <asp:TemplateField HeaderText="Adress">
+                       <asp:TemplateField HeaderText="Адресс">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("Adress") %>' runat="server" />
                         </ItemTemplate>
@@ -95,7 +95,7 @@
                             <asp:TextBox ID="txtAdressFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                       <asp:TemplateField HeaderText="FIOPoluch">
+                       <asp:TemplateField HeaderText="ФИО получателя">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("FIOPoluch") %>' runat="server" />
                         </ItemTemplate>
@@ -106,7 +106,7 @@
                             <asp:TextBox ID="txtFIOPoluchFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                       <asp:TemplateField HeaderText="Cena">
+                       <asp:TemplateField HeaderText="Цена(руб.)">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("Cena") %>' runat="server" />
                         </ItemTemplate>

@@ -59,9 +59,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Sklad.mdf" />
-    <Content Include="App_Data\Sklad_log.ldf">
-      <DependentUpon>Sklad.mdf</DependentUpon>
+    <Content Include="App_Data\UchetBD.mdf" />
+    <Content Include="App_Data\UchetBD_log.ldf">
+      <DependentUpon>UchetBD.mdf</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
     <Content Include="Images\addnew.png" />

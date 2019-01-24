@@ -11,7 +11,7 @@ namespace CrudInGridView
 {
     public partial class Default : System.Web.UI.Page
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ALLO\Desktop\CrudInGridView1\CrudInGridView\App_Data\Sklad.mdf;Integrated Security=True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\d\CrudInGridView\CrudInGridView\App_Data\UchetBD.mdf;Integrated Security=True";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -26,7 +26,7 @@ namespace CrudInGridView
             using (SqlConnection sqlCon = new SqlConnection(connectionString))
             {
                 sqlCon.Open();
-                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Info", sqlCon);
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM UchetT", sqlCon);
                 sqlDa.Fill(dtbl);
             }
             if (dtbl.Rows.Count > 0)
@@ -57,7 +57,7 @@ namespace CrudInGridView
                     using (SqlConnection sqlCon = new SqlConnection(connectionString))
                     {
                         sqlCon.Open();
-                        string query = "INSERT INTO Info (Sotrudnik,DataPost,NazvaniePredmeta,Kolichestvo,DataVida,Adress,FIOPoluch,Cena) VALUES (@Sotrudnik,@DataPost,@NazvaniePredmeta,@Kolichestvo,@DataVida,@Adress,@FIOPoluch,@Cena)";
+                        string query = "INSERT INTO UchetT (Sotrudnik,DataPost,NazvaniePredmeta,Kolichestvo,DataVida,Adress,FIOPoluch,Cena) VALUES (@Sotrudnik,@DataPost,@NazvaniePredmeta,@Kolichestvo,@DataVida,@Adress,@FIOPoluch,@Cena)";
                         SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                         sqlCmd.Parameters.AddWithValue("@Sotrudnik", (gvUchet.FooterRow.FindControl("txtSotrudnikFooter") as TextBox).Text.Trim());
                         sqlCmd.Parameters.AddWithValue("@DataPost", (gvUchet.FooterRow.FindControl("txtDataPostFooter") as TextBox).Text.Trim());
@@ -100,7 +100,7 @@ namespace CrudInGridView
                 using (SqlConnection sqlCon = new SqlConnection(connectionString))
                 {
                     sqlCon.Open();
-                    string query = "UPDATE Info SET Sotrudnik=@Sotrudnik,DataPost=@DataPost,NazvaniePredmeta=@NazvaniePredmeta,Kolichestvo=@Kolichestvo,DataVida=@DataVida,Adress=@Adress,FIOPoluch=@FIOPoluch,Cena=@Cena WHERE InfoId = @id";
+                    string query = "UPDATE UchetT SET Sotrudnik=@Sotrudnik,DataPost=@DataPost,NazvaniePredmeta=@NazvaniePredmeta,Kolichestvo=@Kolichestvo,DataVida=@DataVida,Adress=@Adress,FIOPoluch=@FIOPoluch,Cena=@Cena WHERE MainID = @id";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                     sqlCmd.Parameters.AddWithValue("@Sotrudnik", (gvUchet.Rows[e.RowIndex].FindControl("txtSotrudnik") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@DataPost", (gvUchet.Rows[e.RowIndex].FindControl("txtDataPost") as TextBox).Text.Trim());
@@ -132,7 +132,7 @@ namespace CrudInGridView
                 using (SqlConnection sqlCon = new SqlConnection(connectionString))
                 {
                     sqlCon.Open();
-                    string query = "DELETE FROM Info WHERE InfoId = @id";
+                    string query = "DELETE FROM UchetT WHERE MainID = @id";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                     sqlCmd.Parameters.AddWithValue("@id", Convert.ToInt32(gvUchet.DataKeys[e.RowIndex].Value.ToString()));
                     sqlCmd.ExecuteNonQuery();
